@@ -8,7 +8,7 @@ export default defineI18nConfig(() => ({
       funStuff: 'fun stuff',
       portfolio: 'portfolio',
     },
-    ptBR: {
+    pt_BR: {
       welcome: 'Bem-vindo',
       aboutMe: 'sobre mim',
       funStuff: 'coisas divertidas',
