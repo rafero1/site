@@ -1,6 +1,6 @@
 <template>
   <div @mouseenter="setActive" @mouseleave="setUnactive">
-    <NuxtLink :to="props.url">
+    <NuxtLink :to="$props.url">
       <span v-html="separatorLeft"></span>{{ $t(props.msg) }}<span v-html="separatorRight"></span>
     </NuxtLink>
   </div>
