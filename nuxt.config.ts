@@ -5,8 +5,17 @@ export default defineNuxtConfig({
     shim: false
   },
   modules: ['@nuxtjs/i18n', '@nuxtjs/google-fonts'],
+  vite : {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "~/assets/css/_colors.scss" as *;`
+        }
+      }
+    }
+  },
   css: [
-    '@/assets/css/main.scss',
+    '~/assets/css/main.scss'
   ],
   i18n: {
     vueI18n: '~/i18n.config.ts',
