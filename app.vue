@@ -13,7 +13,7 @@ let year = new Date().getFullYear()
       <p>
         <form class="locale">
           <label><input type="radio" v-model="locale" value="en"><span>EN</span></label> /
-          <label><input type="radio" v-model="locale" value="pt_BR"><span>pt_BR</span></label>
+          <label><input type="radio" v-model="locale" value="pt_BR"><span>PT_BR</span></label>
         </form>
         <span>©</span> {{ year }} Rafael Avilar
       </p>

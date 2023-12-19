@@ -15,6 +15,9 @@ export default defineNuxtConfig({
     download: true,
     families: {
       'Source Code Pro': true,
+      'VT323': true,
+      'Courier Prime': true,
+      'IBM Plex Mono': true,
     }
   },
 })
