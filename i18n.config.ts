@@ -3,13 +3,13 @@ export default defineI18nConfig(() => ({
   locale: 'en',
   messages: {
     en: {
-      welcome: 'Welcome',
+      welcome: 'welcome',
       aboutMe: 'about me',
       funStuff: 'fun stuff',
       portfolio: 'portfolio',
     },
     pt_BR: {
-      welcome: 'Bem-vindo',
+      welcome: 'bem-vindo',
       aboutMe: 'sobre mim',
       funStuff: 'coisas divertidas',
       portfolio: 'portfolio',

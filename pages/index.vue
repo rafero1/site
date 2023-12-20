@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const { locale } = useI18n()
-
+const { locale } = useI18n();
 </script>
 
 <template>
-  <div class="bg">
+  <div>
+    <p class="greetings">~ {{ $t("welcome") }} ~</p>
     <h1 class="title">Rafael Avilar</h1>
     <nav class="links">
       <ul>
@@ -23,10 +23,15 @@ const { locale } = useI18n()
 </template>
 
 <style scoped lang="scss">
-.title {
-  font-size: 3rem;
+.greetings {
   text-align: center;
-  margin-top: 30vh;
+  margin-top: 1.4em;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20vh;
   font-weight: 400;
   color: $green;
 }
@@ -41,7 +46,7 @@ const { locale } = useI18n()
     justify-content: center;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;
     }
 

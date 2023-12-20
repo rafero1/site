@@ -1,13 +1,7 @@
-<script lang="ts" setup>
-
-</script>
-
 <template>
-  <div>
-    <slot />
-  </div>
+  <div class="bg"></div>
 </template>
 
-<style scoped>
+<script lang="ts" setup></script>
 
-</style>
+<style></style>
