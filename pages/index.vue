@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { locale } = useI18n();
-</script>
-
 <template>
   <div>
     <p class="greetings">~ {{ $t("welcome") }} ~</p>
@@ -21,6 +17,10 @@ const { locale } = useI18n();
     </nav>
   </div>
 </template>
+
+<script setup lang="ts">
+const { locale } = useI18n();
+</script>
 
 <style scoped lang="scss">
 .greetings {

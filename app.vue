@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-const route = useRoute();
-</script>
-
 <template>
   <div class="bg image"></div>
   <div class="bg overlay"></div>
@@ -9,6 +5,10 @@ const route = useRoute();
   <NuxtPage></NuxtPage>
   <Footer></Footer>
 </template>
+
+<script lang="ts" setup>
+const route = useRoute();
+</script>
 
 <style scoped lang="scss">
 .bg {
