@@ -4,29 +4,11 @@ export default defineNuxtConfig({
   typescript: {
     shim: false
   },
-  modules: ['@nuxtjs/i18n', '@nuxtjs/google-fonts'],
-  vite : {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@use "~/assets/css/_colors.scss" as *;`
-        }
-      }
-    }
-  },
+  modules: ['@nuxtjs/i18n', '@unocss/nuxt'],
   css: [
-    '~/assets/css/main.scss'
+    '@unocss/reset/normalize.css'
   ],
   i18n: {
     vueI18n: '~/i18n.config.ts',
-  },
-  googleFonts: {
-    download: true,
-    families: {
-      'Source Code Pro': true,
-      'VT323': true,
-      'Courier Prime': true,
-      'IBM Plex Mono': true,
-    }
-  },
+  }
 })

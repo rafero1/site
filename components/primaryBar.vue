@@ -1,10 +1,12 @@
 <template>
-  <div class="primary-bar">
+  <div
+    class="w-full p5 box-border bg-dark flex flex-justify-between flex-items-start"
+  >
     <span>{{ buildFancyPath($props.path) }}</span>
-    <span class="clock"
-      >{{ time.split(":")[0] }}<span class="clock-separator">:</span
-      >{{ time.split(":")[1] }}</span
-    >
+    <span class="flex-self-end">
+      {{ time.split(":")[0] }}<span class="clock-separator">:</span
+      >{{ time.split(":")[1] }}
+    </span>
   </div>
 </template>
 
@@ -60,17 +62,3 @@ const buildFancyPath = (path: string): string => {
   return pathString;
 };
 </script>
-
-<style scoped lang="scss">
-.primary-bar {
-  background-color: $veil;
-  padding: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  .clock {
-    align-self: flex-end;
-  }
-}
-</style>

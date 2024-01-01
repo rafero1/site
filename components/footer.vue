@@ -1,27 +1,10 @@
 <template>
-  <footer class="footer">
-    <p>
-      <LocaleSelector></LocaleSelector>
-      <span>©</span> {{ year }} rafael
-    </p>
+  <footer class="relative bottom-0 left-0 right-0 p5 flex flex-justify-end">
+    <LocaleSelector class="mr-5"></LocaleSelector>
+    <span>© {{ year }} rafael</span>
   </footer>
 </template>
 
 <script setup lang="ts">
 let year = new Date().getFullYear();
 </script>
-
-<style scoped lang="scss">
-.footer {
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  height: 54px;
-  width: 100%;
-  background-color: $darker;
-
-  p {
-    padding: 0 18px 0 0;
-  }
-}
-</style>
