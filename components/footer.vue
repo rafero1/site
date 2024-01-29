@@ -1,7 +1,8 @@
 <template>
-  <footer class="relative bottom-0 left-0 right-0 p5 flex flex-justify-end">
+  <footer
+    class="relative bottom-0 left-0 right-0 p5 flex flex-justify-end font-size-3 sm:font-size-4"
+  >
     <LocaleSelector class="mr-5"></LocaleSelector>
-    <span>© {{ year }} rafael</span>
   </footer>
 </template>
 

@@ -19,7 +19,7 @@ export default defineConfig({
     colors: {
       primary: '#4caf50',
       secondary: '#ff5722',
-      dark: '#182128',
+      dark: 'rgb(7, 10, 13)',
       darker: '#0d1216',
       veil: 'rgba(0, 0, 0, 0.8)',
       light: '#d8d8d8',

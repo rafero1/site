@@ -1,37 +1,37 @@
 <template>
-  <div class="fixed-width">
-    <section class="bg-dark max-w-7xl mx-a mt-30">
-      <header class="bg-purple flex flex-center flex-justify-between">
-        <NuxtLink
-          class="decoration-none text-light mx-5 my-a flex-shrink font-size-xl"
-          to="/"
-          >&lt;&lt;</NuxtLink
-        >
-        <h1
-          class="uppercase text-center text-size-6 tracking-widest mx-a flex-grow"
-        >
-          {{ $t("portfolio") }}
-        </h1>
-      </header>
+  <section class="bg-dark max-w-6xl mx-a mt-30">
+    <header class="bg-purple flex flex-center flex-justify-between">
+      <NuxtLink
+        class="decoration-none text-light mx-5 my-a flex-shrink font-size-xl"
+        to="/"
+        >&lt;&lt;</NuxtLink
+      >
+      <h1
+        class="uppercase text-center text-size-6 tracking-widest mx-a flex-grow"
+      >
+        {{ $t("portfolio") }}
+      </h1>
+    </header>
 
-      <SkeletonDialogue
-        :prompt="$t('portfolioPrompt')"
-        :dialogue="$t('portfolioDialogue')"
-      />
+    <SkeletonDialogue
+      :prompt="$t('portfolioPrompt')"
+      :dialogue="$t('portfolioDialogue')"
+    />
 
-      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <il v-for="(item, i) in filteredItems" :key="i">
-          <PortfolioItem
-            :title="item.title"
-            :description="item.description"
-            :categories="item.categories"
-            :year="item.year"
-            :image="item.image"
-          />
-        </il>
-      </ul>
-    </section>
-  </div>
+    <ul
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mx-a p-0"
+    >
+      <il v-for="(item, i) in filteredItems" :key="i">
+        <PortfolioItem
+          :title="item.title"
+          :description="item.description"
+          :categories="item.categories"
+          :year="item.year"
+          :image="item.image"
+        />
+      </il>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts" setup>

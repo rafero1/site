@@ -9,7 +9,8 @@ export default defineI18nConfig(() => ({
       portfolio: 'portfolio',
       portfolioPrompt: '> the programming skull says...',
       portfolioDialogue: 'a collection of my projects',
-      introMsg: 'hello, i\'m a developer based in Brazil and i enjoy programming neat things.',
+      intro: 'hello, my name is Rafael.',
+      intro2: 'i\'m a developer based in Brazil and i enjoy programming neat things.',
     },
     pt_BR: {
       welcome: 'bem-vindo',
@@ -18,7 +19,8 @@ export default defineI18nConfig(() => ({
       portfolio: 'portfolio',
       portfolioPrompt: '> a caveira programadora diz...',
       portfolioDialogue: 'uma coleção dos meus projetos',
-      introMsg: 'olá, eu sou um desenvolvedor baseado no Brasil e eu gosto de programar coisas legais.',
+      intro: 'olá, meu nome é Rafael.',
+      intro2: 'sou um desenvolvedor baseado no Brasil e gosto de programar coisas legais.',
     }
   }
 }));

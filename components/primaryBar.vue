@@ -1,12 +1,17 @@
 <template>
   <div
-    class="w-full p5 box-border bg-dark flex flex-justify-between flex-items-start"
+    class="w-full p5 box-border flex flex-justify-between flex-items-start font-size-3 sm:font-size-4"
   >
-    <span>{{ buildFancyPath($props.path) }}</span>
-    <span class="flex-self-end">
-      {{ time.split(":")[0] }}<span class="clock-separator">:</span
-      >{{ time.split(":")[1] }}
-    </span>
+    <span
+      ><span class="text-green">$</span> {{ buildFancyPath($props.path) }}</span
+    >
+    <div class="flex-self-end">
+      <LocaleSelector class="mr-5"></LocaleSelector>
+      <span>
+        {{ time.split(":")[0] }}<span class="clock-separator">:</span
+        >{{ time.split(":")[1] }}
+      </span>
+    </div>
   </div>
 </template>
 

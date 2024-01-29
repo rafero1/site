@@ -1,5 +1,5 @@
 <template>
-  <form class="flex">
+  <form class="inline">
     <label
       class="px-1 hover:cursor-pointer text-gray has-[:checked]:text-light"
     >
