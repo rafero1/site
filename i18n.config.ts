@@ -10,7 +10,11 @@ export default defineI18nConfig(() => ({
       portfolioPrompt: '> the programming skull says...',
       portfolioDialogue: 'a collection of my projects',
       intro: 'hello, my name is Rafael.',
-      intro2: 'i\'m a developer based in Brazil and i enjoy programming neat things.',
+      intro2: 'i\'m a developer based in Brazil and i enjoy programming neat and nifty little things.',
+      goodMorning: 'have a good morning!',
+      goodAfternoon: 'have a good afternoon!',
+      goodEvening: 'have a good evening!',
+      goodNight: 'have a good night!',
     },
     pt_BR: {
       welcome: 'bem-vindo',
@@ -20,7 +24,11 @@ export default defineI18nConfig(() => ({
       portfolioPrompt: '> a caveira programadora diz...',
       portfolioDialogue: 'uma coleção dos meus projetos',
       intro: 'olá, meu nome é Rafael.',
-      intro2: 'sou um desenvolvedor baseado no Brasil e gosto de programar coisas legais.',
+      intro2: 'eu sou um desenvolvedor baseado no Brasil e gosto de programar coisas legais e divertidas.',
+      goodMorning: 'tenha uma boa manhã!',
+      goodAfternoon: 'tenha uma boa tarde!',
+      goodEvening: 'tenha uma boa noite!',
+      goodNight: 'tenha uma boa noite!',
     }
   }
 }));

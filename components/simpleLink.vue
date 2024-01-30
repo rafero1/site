@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="decoration-none text-light hover:text-green hover:font-bold"
+    class="decoration-none text-light hover:text-orange"
     @mouseenter="setActive"
     @mouseleave="setUnactive"
     :to="$props.url"
