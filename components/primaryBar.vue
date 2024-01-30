@@ -1,8 +1,9 @@
 <template>
-    <div class="w-full p5 box-border flex flex-justify-between flex-items-start font-size-3 sm:font-size-4">
+    <div
+        class="w-full p5 box-border flex flex-justify-between flex-items-start flex-col sm:flex-row gap-y-2 font-size-3 sm:font-size-4">
         <span><span class="text-green">$</span> {{ buildFancyPath($props.path) }}</span>
         <div class="flex-self-end">
-            <LocaleSelector></LocaleSelector>
+            <LocaleSelector class="mr-2"></LocaleSelector>
             <span>
                 {{ time.split(":")[0] }}<span class="clock-separator">:</span>{{ time.split(":")[1] }}
             </span>
@@ -11,6 +12,8 @@
 </template>
 
 <script setup lang="ts">
+import { buildFancyPath } from "./../utils/buildFancyPath";
+
 const props = defineProps({
     path: {
         type: String,
@@ -45,20 +48,4 @@ onMounted(() => {
     }, 2000);
 });
 
-/**
- * Build a fancy path string from the given path
- * @param path the path to be converted
- * @returns the fancy path string
- */
-const buildFancyPath = (path: string): string => {
-    let pathString = "/home/rafael";
-
-    if (path === "/") {
-        pathString += "/hello_world.sh";
-    } else {
-        pathString += path.toLowerCase().replace("-", "_") + ".sh";
-    }
-
-    return pathString;
-};
 </script>
