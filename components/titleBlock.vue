@@ -1,6 +1,14 @@
 <template>
   <div>
-    <pre class="mt-20 text-green text-left w-max mx-a font-size-1.8 sm:font-size-2.5 md:font-size-4" aria-hidden="true">
+    <pre
+      w-max
+      mx-a
+      text="left primary"
+      font-size-1.8
+      sm:font-size-2.5
+      md:font-size-4
+      aria-hidden="true"
+    >
  ,ggggggggggg,
 dP"""88""""""Y8,              ,dPYb,                      ,dPYb,
 Yb,  88      `8b              IP'`Yb                      IP'`Yb
@@ -26,8 +34,18 @@ Yb,  88      `8b              IP'`Yb                      IP'`Yb
  __   ,8"     88     d8"Yb   88bg88   I8dP    dP"  "Y8I   dP""""8I
 dP"  ,8P      Y8    dP  I8   8I  88   I8P    i8'    ,8I  ,8'    8I
 Yb,_,dP       `8b,,dP   I8, ,8I_,88,_,d8b,_ ,d8,   ,d8b,,dP     Y8,
- "Y8P"         `Y88"     "Y8P" 8P""Y88P'"Y88P"Y8888P"`Y88P      `Y8</pre>
-    <h1 class="mt-5 text-center text-green font-size-4 uppercase tracking-[1em] mx-a w-50 sm:w-a">
+ "Y8P"         `Y88"     "Y8P" 8P""Y88P'"Y88P"Y8888P"`Y88P      `Y8</pre
+    >
+    <h1
+      w-50
+      sm:w-a
+      mt-5
+      mx-a
+      text="center primary"
+      font-size-4
+      uppercase
+      tracking="[1em]"
+    >
       Rafael Avilar
     </h1>
   </div>
@@ -35,5 +53,4 @@ Yb,_,dP       `8b,,dP   I8, ,8I_,88,_,d8b,_ ,d8,   ,d8b,,dP     Y8,
 
 <script lang="ts" setup></script>
 
-<style>
-</style>
+<style></style>

@@ -1,7 +1,7 @@
 <template>
   <div class="p-5 text-center">
     <p class="mt-10">~ {{ $t("welcome") }} ~</p>
-    <h1 class="mt-20 font-size-12 text-green">Rafael Avilar</h1>
+    <h1 class="mt-20 font-size-12 text-primary">Rafael Avilar</h1>
     <pre class="font-size-3.5 text-gray" aria-hidden="true">
     88888888888888888888888888888888888888888888888888888888888888888888888
     88.._|      | `-.  | `.  -_-_ _-_  _-  _- -_ -  .'|   |.'|     |  _..88

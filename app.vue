@@ -1,22 +1,31 @@
 <template>
   <PrimaryBar :path="route.path" />
-  <div class="px-5">
-    <ConsoleLine text="Running hello_world script..." />
-    <TitleBlock />
-    <div class="text-center">
-      <p class="mt-20 italic">~ {{ $t("welcome") }} ~</p>
-      <p class="mt-10">{{ $t("intro") }}</p>
+  <div px-5>
+    <ConsoleLine
+      mb-40
+      :showTimestamp="true"
+      text="Running hello_world script..."
+      text-color="dark"
+    />
+
+    <TitleBlock mb-50 />
+
+    <div mb-40 text-center>
+      <p italic mb-10>~ {{ $t("welcome") }} ~</p>
+      <p>{{ $t("intro") }}</p>
       <p>{{ $t("intro2") }}</p>
-      <nav class="mt-10 flex flex-justify-center">
-        <ul class="list-none p0">
-          <li class="m-3">
-            <SimpleLink url="/portfolio" msg="portfolio" />
-          </li>
-        </ul>
-      </nav>
     </div>
-    <ConsoleLine text="hello_world script execution finished!" />
-    <ConsoleLine :text="$t(goodbye)" />
+
+    <ContactCard my-20 />
+
+    <!-- Portfolio -->
+
+    <!-- Skills -->
+
+    <ConsoleLine :showTimestamp="true" text="finished." text-color="dark" />
+    <ConsoleLine :text="$t(goodbye)" text-color="dark" />
+
+    <!-- Interests: Gaming, Programming, Music, Anime, Manga, Web Development -->
   </div>
 </template>
 

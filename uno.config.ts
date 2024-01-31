@@ -1,5 +1,6 @@
 // uno.config.ts
 import { defineConfig, presetAttributify, presetUno, presetWebFonts, presetIcons } from 'unocss'
+import transformerAttributifyJsx from '@unocss/transformer-attributify-jsx'
 
 export default defineConfig({
   presets: [
@@ -15,16 +16,21 @@ export default defineConfig({
     }),
     presetIcons(),
   ],
+  transformers: [
+    transformerAttributifyJsx()
+  ],
+  shortcuts: {
+    link: 'decoration-none text-light hover:text-accent'
+  },
   theme: {
     colors: {
       primary: '#4caf50',
-      secondary: '#ff5722',
-      dark: 'rgb(7, 10, 13)',
-      darker: '#0d1216',
-      veil: 'rgba(0, 0, 0, 0.8)',
+      secondary: '#5e5a7e',
+      accent: '#ff5722',
+      dark: '#312f42',
+      darker: '#0a090e',
       light: '#d8d8d8',
       gray: '#545454',
-      green: '#a2c755',
       purple: '#543b60',
       blue: '#4690ff',
     },
