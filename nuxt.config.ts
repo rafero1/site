@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   typescript: {
     shim: false
   },
+  features: {
+    inlineStyles: false,
+  },
   modules: ['@nuxtjs/i18n', '@unocss/nuxt', '@nuxt/test-utils/module'],
   css: [
     '@unocss/reset/normalize.css'
