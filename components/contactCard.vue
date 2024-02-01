@@ -1,34 +1,37 @@
 <template>
-  <address border="solid light 1px" p-5>
-    <p>feel free to contact me at:</p>
+  <address border="solid dark 1px" p-5 text-center>
+    <h2 font="normal size-4">Feel free to contact me at:</h2>
     <ul list-none p0>
-      <li>
-        <a
-          link
+      <li my-4>
+        <DottedLink
           href="mailto:rfl.avilar@outlook.com"
+          text="rfl.avilar@outlook.com"
           target="_blank"
           rel="noopener"
-          >rfl.avilar@outlook.com</a
-        >
+        />
       </li>
-      <li>
-        <a link href="https://github.com/rafero1" target="_blank" rel="noopener"
-          >GitHub</a
-        >
+      <li my-4>
+        <DottedLink
+          href="https://github.com/rafero1"
+          text="GitHub"
+          target="_blank"
+          rel="noopener"
+        />
       </li>
-      <li>
-        <a
-          link
+      <li my-4>
+        <DottedLink
           href="https://linkedin.com/in/rafael-avilar"
+          text="LinkedIn"
           target="_blank"
           rel="noopener"
-          >LinkedIn
-        </a>
+        />
       </li>
     </ul>
   </address>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { DottedLink } from "#build/components";
+</script>
 
 <style></style>

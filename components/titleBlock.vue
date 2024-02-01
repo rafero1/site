@@ -1,14 +1,21 @@
 <template>
   <div>
-    <pre
+    <!-- TODO: animate pre tag characters color change -->
+    <div
       w-max
       mx-a
-      text="left primary"
-      font-size-1.8
-      sm:font-size-2.5
-      md:font-size-4
-      aria-hidden="true"
+      class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-primary to-80%"
     >
+      <pre
+        p-4
+        bg-darker
+        text="left white"
+        mix-blend-darken
+        font-size-1.8
+        sm:font-size-2.5
+        md:font-size-4
+        aria-hidden="true"
+      >
  ,ggggggggggg,
 dP"""88""""""Y8,              ,dPYb,                      ,dPYb,
 Yb,  88      `8b              IP'`Yb                      IP'`Yb
@@ -35,22 +42,26 @@ Yb,  88      `8b              IP'`Yb                      IP'`Yb
 dP"  ,8P      Y8    dP  I8   8I  88   I8P    i8'    ,8I  ,8'    8I
 Yb,_,dP       `8b,,dP   I8, ,8I_,88,_,d8b,_ ,d8,   ,d8b,,dP     Y8,
  "Y8P"         `Y88"     "Y8P" 8P""Y88P'"Y88P"Y8888P"`Y88P      `Y8</pre
-    >
+      >
+    </div>
     <h1
       w-50
       sm:w-a
       mt-5
       mx-a
-      text="center primary"
+      text="center secondary"
       font-size-4
       uppercase
       tracking="[1em]"
     >
       Rafael Avilar
     </h1>
+    <!-- TODO: Quick Contact links -->
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+// assign
+</script>
 
 <style></style>

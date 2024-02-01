@@ -19,6 +19,7 @@
     "@unocss/nuxt": "^0.58.2",
     "@unocss/preset-uno": "^0.58.2",
     "@unocss/transformer-attributify-jsx": "^0.58.4",
+    "@unocss/transformer-variant-group": "^0.58.4",
     "@vue/test-utils": "^2.4.4",
     "eslint": "^8.55.0",
     "happy-dom": "^13.3.5",
@@ -31,7 +32,7 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
-    "@unocss/core": "^0.58.4",
+    "@unocss/core": "^0.58.2",
     "@unocss/reset": "^0.58.2"
   }
 }

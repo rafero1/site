@@ -1,23 +1,22 @@
 <template>
   <div
+    bg-darker
     p5
     w-full
     box-border
     font-size-3
     sm:font-size-4
-    gap-y-2
-    flex="~ justify-between items-start col"
-    sm:flex-row
+    flex="~ justify-between items-start row"
   >
     <span text-dark aria-hidden="true"
       ><span>$</span> {{ buildFancyPath($props.path) }}</span
     >
     <div flex-self-end>
-      <LocaleSelector mr-2></LocaleSelector>
-      <span aria-hidden="true">
+      <span aria-hidden="true" hidden sm:inline mr-5>
         {{ time.split(":")[0] }}<span class="clock-separator">:</span
         >{{ time.split(":")[1] }}
       </span>
+      <LocaleSelector></LocaleSelector>
     </div>
   </div>
 </template>

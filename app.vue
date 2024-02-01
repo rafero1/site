@@ -1,6 +1,9 @@
 <template>
   <PrimaryBar :path="route.path" />
-  <div px-5>
+
+  <!--TODO: background idea: animate ascii letters or code snippets randomly flashing in the background-->
+
+  <main px-5>
     <ConsoleLine
       mb-40
       :showTimestamp="true"
@@ -10,23 +13,29 @@
 
     <TitleBlock mb-50 />
 
-    <div mb-40 text-center>
-      <p italic mb-10>~ {{ $t("welcome") }} ~</p>
-      <p>{{ $t("intro") }}</p>
-      <p>{{ $t("intro2") }}</p>
-    </div>
+    <section m-a sm:max-w-3xl>
+      <div mb-40 text-center>
+        <h2 mb-10 font="size-4 normal italic">
+          <span aria-hidden="true">~</span> {{ $t("welcome") }}
+          <span aria-hidden="true">~</span>
+        </h2>
+        <p>{{ $t("intro") }}</p>
+        <p>{{ $t("intro2") }}</p>
+      </div>
 
-    <ContactCard my-20 />
+      <!-- TODO: Portfolio -->
+      <PortfolioCard my-20 />
 
-    <!-- Portfolio -->
+      <!-- TODO: Skills -->
 
-    <!-- Skills -->
+      <ContactCard my-20 />
+    </section>
 
     <ConsoleLine :showTimestamp="true" text="finished." text-color="dark" />
     <ConsoleLine :text="$t(goodbye)" text-color="dark" />
 
     <!-- Interests: Gaming, Programming, Music, Anime, Manga, Web Development -->
-  </div>
+  </main>
 </template>
 
 <script lang="ts" setup>
