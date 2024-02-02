@@ -27,7 +27,7 @@
             <span text-sky-400>{{ $t("music") }}</span
             >, {{ $t("and") }}
             <span text-emerald-400>&lt;{{ $t("coding") }} /&gt;</span>
-            {{ $t("intro3") }}.
+            {{ $t("intro3") }}
           </p>
 
           <div flex="~ col">

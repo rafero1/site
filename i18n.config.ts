@@ -61,7 +61,7 @@ export default defineI18nConfig(() => ({
       music: "música",
       coding: "codificar",
 
-      myTechStack: "Meu stack de tecnologia 👇",
+      myTechStack: "Meu stack de tecnologias 👇",
 
       contactAction: "Sinta-se à vontade para entrar em contato comigo:",
 
