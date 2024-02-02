@@ -1,6 +1,6 @@
 <template>
   <address border="solid dark 1px" p-5 text-center>
-    <h2 font="normal size-4">Feel free to contact me at:</h2>
+    <h2 font="normal size-4">{{ $t("contactAction") }}</h2>
     <ul list-none p0>
       <!-- TODO: icons -->
       <li my-4>
@@ -31,8 +31,6 @@
   </address>
 </template>
 
-<script lang="ts" setup>
-import type { DottedLink } from "#build/components";
-</script>
+<script lang="ts" setup></script>
 
 <style></style>

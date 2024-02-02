@@ -1,11 +1,11 @@
 <template>
   <article flex flex-col sm:flex-row gap-8>
     <figure m-a sm:m-0>
-      <img :src="image" :alt="title" w-28 h-28 cursor-pointer />
+      <img :src="image" :alt="title[lang]" w-28 h-28 cursor-pointer />
     </figure>
     <div>
       <header>
-        <h3 font="normal" text-size-6 my-0>{{ title }}</h3>
+        <h3 font="normal" text-size-6 my-0>{{ title[lang] }}</h3>
         <p italic mt-2 mb-0 text-secondary>{{ year }}</p>
         <p italic mt-2 mb-4 text-secondary>
           {{ categories.join(", ") }}
@@ -14,7 +14,7 @@
       <div>
         <template
           v-if="description"
-          v-for="paragraph in parseDescription(description)"
+          v-for="paragraph in parseDescription(description[lang])"
         >
           <p mt-0>
             <template v-for="sentence in paragraph">
@@ -31,7 +31,7 @@
             </template>
           </p>
         </template>
-        <p v-else mt-0>{{ summary }}</p>
+        <p v-else mt-0>{{ summary[lang] }}</p>
 
         <nav v-if="url || gitUrl">
           <ul list-none p0>
@@ -60,10 +60,24 @@
 </template>
 
 <script lang="ts" setup>
-export interface IPortfolioItem {
-  title: string;
-  summary: string;
-  description?: string[];
+const { locale } = useI18n();
+
+const lang = ref(locale.value as Language);
+
+enum Language {
+  English = "en",
+  PortugueseBR = "pt_BR",
+}
+
+export interface ITranslatedText<T> {
+  [Language.English]: T;
+  [Language.PortugueseBR]: T;
+}
+
+export interface IProject {
+  title: ITranslatedText<string>;
+  summary: ITranslatedText<string>;
+  description?: ITranslatedText<string[]>;
   categories: string[];
   year: number;
   image: string;
@@ -71,7 +85,7 @@ export interface IPortfolioItem {
   gitUrl?: string;
 }
 
-const props = defineProps<IPortfolioItem>();
+const props = defineProps<IProject>();
 </script>
 
 <style></style>
