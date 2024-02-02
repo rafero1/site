@@ -1,4 +1,10 @@
-# Nuxt 3 Minimal Starter
+# Personal Website
+
+Source code for my personal website. Built mostly with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) and [UnoCSS](https://unocss.com/).
+
+Tested node version 20.10.0 and npm 10.2.3
+
+## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -36,6 +42,24 @@ yarn dev
 
 # bun
 bun run dev
+```
+
+## Testing
+
+To run the tests:
+
+```bash
+# npm
+npm run test
+
+# pnpm
+pnpm run test
+
+# yarn
+yarn test
+
+# bun
+bun run test
 ```
 
 ## Production

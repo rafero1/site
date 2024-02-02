@@ -2,6 +2,7 @@
   <address border="solid dark 1px" p-5 text-center>
     <h2 font="normal size-4">Feel free to contact me at:</h2>
     <ul list-none p0>
+      <!-- TODO: icons -->
       <li my-4>
         <DottedLink
           href="mailto:rfl.avilar@outlook.com"

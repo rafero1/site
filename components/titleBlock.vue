@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- TODO: animate pre tag characters color change -->
+    <!-- TODO: animation -->
     <div
       w-max
       mx-a

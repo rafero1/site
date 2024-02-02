@@ -2,16 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   typescript: {
-    shim: false
+    shim: false,
   },
   features: {
     inlineStyles: false,
   },
-  modules: ['@nuxtjs/i18n', '@unocss/nuxt', '@nuxt/test-utils/module'],
-  css: [
-    '@unocss/reset/normalize.css'
-  ],
+  modules: ["@nuxtjs/i18n", "@unocss/nuxt", "@nuxt/test-utils/module"],
+  css: ["@unocss/reset/normalize.css"],
   i18n: {
-    vueI18n: '~/i18n.config.ts',
-  }
-})
+    vueI18n: "~/i18n.config.ts",
+  },
+});

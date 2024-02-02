@@ -5,7 +5,7 @@
       <label
         text-dark
         hover="cursor-pointer text-accent"
-        class="has-[:checked]:text-primary"
+        class="has-[:checked]:text-accent"
         :aria-label="$t('en')"
       >
         <input hidden type="radio" v-model="locale" value="en" /><span
@@ -17,7 +17,7 @@
         pr-1
         text-dark
         hover="cursor-pointer text-accent"
-        class="has-[:checked]:text-primary"
+        class="has-[:checked]:text-accent"
         :aria-label="$t('ptBr')"
       >
         <input hidden type="radio" v-model="locale" value="pt_BR" /><span
