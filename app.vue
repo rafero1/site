@@ -38,6 +38,7 @@
               'React',
               'Vue',
               'JavaScript',
+              'TypeScript',
               'HTML',
               'CSS3',
               'PHP',

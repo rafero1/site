@@ -5,7 +5,7 @@ export const data: IProject[] = [
     title: "Personal Site",
     summary:
       "This very website. I love the feel of terminal-like interfaces, so I tried to capture that vibe. Support for English and Portuguese!",
-    categories: ["Web", "Vue", "Nuxt", "UnoCSS"],
+    categories: ["Web", "TS", "Vue", "Nuxt", "UnoCSS"],
     year: 2023,
     image: "/img/site-thumb-xs.png",
     url: "https://rafael-avilar.vercel.app",
