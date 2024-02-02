@@ -60,7 +60,7 @@
 </template>
 
 <script lang="ts" setup>
-interface IPortfolioItem {
+export interface IPortfolioItem {
   title: string;
   summary: string;
   description?: string[];

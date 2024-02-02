@@ -1,4 +1,5 @@
 <template>
+  <!--TODO: image viewer / details popup / page -->
   <div>
     <h2 font-normal mb-30 text-center>
       Check out some
@@ -28,9 +29,8 @@
 </template>
 
 <script lang="ts" setup>
-import type { IPortfolioItem } from "../portfolioItem.vue";
-
 const { locale } = useI18n();
+import type { IPortfolioItem } from "./PortfolioItem.vue";
 
 const items = ref<IPortfolioItem[]>([
   {
