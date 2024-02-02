@@ -15,7 +15,7 @@ export default defineI18nConfig(() => ({
       portfolioDialogue: "A collection of my projects",
       portfolioTitle1: "And check out some",
       portfolioWord: "cool stuff",
-      portfolioTitle2: "I made",
+      portfolioTitle2: "I made:",
 
       intro: "Hello, my name is Rafael.",
       intro2:
@@ -50,7 +50,7 @@ export default defineI18nConfig(() => ({
       portfolioDialogue: "Uma coleção dos meus projetos",
       portfolioTitle1: "E confira algumas",
       portfolioWord: "coisas legais",
-      portfolioTitle2: "que eu fiz",
+      portfolioTitle2: "que eu fiz:",
 
       intro: "Olá, meu nome é Rafael.",
       intro2:
@@ -59,7 +59,7 @@ export default defineI18nConfig(() => ({
 
       and: "e",
       music: "música",
-      coding: "codificar",
+      coding: "programação",
 
       myTechStack: "Meu stack de tecnologias 👇",
 

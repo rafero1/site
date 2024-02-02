@@ -3,7 +3,7 @@
     <fieldset border-none p0 m0 inline>
       <legend sr-only>{{ $t("languageSelect") }}</legend>
       <label
-        text-dark
+        text-light
         hover="cursor-pointer text-accent"
         class="has-[:checked]:text-accent"
         :aria-label="$t('en')"
@@ -15,7 +15,7 @@
       /
       <label
         pr-1
-        text-dark
+        text-light
         hover="cursor-pointer text-accent"
         class="has-[:checked]:text-accent"
         :aria-label="$t('ptBr')"

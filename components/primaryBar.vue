@@ -6,9 +6,10 @@
     box-border
     font-size-3
     sm:font-size-4
+    text-secondary
     flex="~ justify-between items-start row"
   >
-    <span text-dark aria-hidden="true"
+    <span aria-hidden="true"
       ><span>$</span> {{ buildFancyPath($props.path) }}</span
     >
     <div flex-self-end>
