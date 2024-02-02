@@ -41,7 +41,7 @@ export const data: IProject[] = [
       "By visiting each location in real life, the player could scan QR codes that unlock fun facts about the place and in-game badges to increase their explorer level.",
       "The project was finished and then handed off to the [university memorial department](https://memorial.ufc.br/pt/).",
     ],
-    categories: ["Android", "Kotlin"],
+    categories: ["Android", "Kotlin", "SQLite"],
     year: 2019,
     image: "https://picsum.photos/112/112",
     url: "",
