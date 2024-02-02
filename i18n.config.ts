@@ -10,6 +10,10 @@ export default defineI18nConfig(() => ({
       aboutMe: "About me",
       funStuff: "Fun Stuff",
 
+      open: "Open",
+      liveDemo: "Live Demo",
+      sourceCode: "Source Code",
+
       portfolio: "Portfolio",
       portfolioPrompt: "> the programming skull says...",
       portfolioDialogue: "A collection of my projects",
@@ -44,6 +48,10 @@ export default defineI18nConfig(() => ({
       welcome: "Bem-vindo",
       aboutMe: "Sobre mim",
       funStuff: "Coisas divertidas",
+
+      open: "Abrir",
+      liveDemo: "Live Demo",
+      sourceCode: "Código-fonte",
 
       portfolio: "Portfolio",
       portfolioPrompt: "> a caveira programadora diz...",

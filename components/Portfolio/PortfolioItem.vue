@@ -1,7 +1,7 @@
 <template>
   <article flex flex-col sm:flex-row gap-8>
-    <figure m-a sm:m-0>
-      <img :src="image" :alt="title" w-28 h-28 cursor-pointer />
+    <figure m-a mb-12 sm:m-0>
+      <NuxtImg :src="image" :alt="title" placeholder w-28 h-28 rounded-full />
     </figure>
     <div>
       <header>
@@ -36,18 +36,20 @@
         <nav v-if="url || gitUrl">
           <ul list-none p0>
             <li v-if="url" mb-4>
+              &gt;
               <DottedLink
                 :href="url"
-                text="Access"
+                :text="urlLabel ?? $t('open')"
                 target="_blank"
                 rel="noopener"
               />
             </li>
 
             <li v-if="gitUrl">
+              &gt;
               <DottedLink
                 :href="gitUrl"
-                text="Source Code"
+                :text="$t('sourceCode')"
                 target="_blank"
                 rel="noopener"
               />
@@ -70,6 +72,7 @@ export interface IProject {
   year: number;
   image: string;
   url?: string;
+  urlLabel?: string;
   gitUrl?: string;
 }
 

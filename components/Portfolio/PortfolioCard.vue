@@ -18,6 +18,7 @@
             :year="item.year"
             :image="item.image"
             :url="item.url"
+            :urlLabel="item.urlLabel"
             :gitUrl="item.gitUrl"
           />
         </li>

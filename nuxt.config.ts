@@ -7,9 +7,17 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: false,
   },
-  modules: ["@nuxtjs/i18n", "@unocss/nuxt", "@nuxt/test-utils/module"],
+  modules: [
+    "@nuxtjs/i18n",
+    "@nuxt/image",
+    "@unocss/nuxt",
+    "@nuxt/test-utils/module",
+  ],
   css: ["@unocss/reset/normalize.css"],
   i18n: {
     vueI18n: "~/i18n.config.ts",
+  },
+  image: {
+    // Options
   },
 });
