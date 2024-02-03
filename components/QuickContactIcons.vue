@@ -2,7 +2,7 @@
   <address text-center>
     <ul list-none p0 flex="~ row" justify-center>
       <li m4>
-        <a block href="mailto:rfl.avilar@outlook.com"
+        <a decoration-none block href="mailto:rfl.avilar@outlook.com"
           ><div
             class="i-tabler:mail"
             w-1.5rem
@@ -18,6 +18,7 @@
       </li>
       <li m4>
         <a
+          decoration-none
           block
           href="https://github.com/rafero1"
           target="_blank"
@@ -38,6 +39,7 @@
       </li>
       <li m4>
         <a
+          decoration-none
           block
           href="https://linkedin.com/in/rafael-avilar"
           target="_blank"
