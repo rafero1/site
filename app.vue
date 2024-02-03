@@ -16,7 +16,7 @@
       <TitleBlock mb-60 />
 
       <section mb-60 m-a sm:max-w-md text-center>
-        <h2 mb-10 font="size-4 normal italic">
+        <h2 mb-16 font="size-4 normal italic">
           <TypewriterEffect
             :words="[
               '~Welcome~',
