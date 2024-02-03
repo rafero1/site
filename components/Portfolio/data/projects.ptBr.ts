@@ -39,7 +39,7 @@ const data: IProject[] = [
     description: [
       "Um jogo/app android feito para encorajar pessoas a visitar e aprender sobre pontos históricos da Universidade Federal do Ceará.",
       "Ao visitar cada local na vida real, o jogador poderia escanear QR codes que destravavam curiosidades sobre o local e conquistas in-game para aumentar seu nível de explorador.",
-      "O projeto foi finalizado e então entregue ao [memorial da universidade](https://memorial.ufc.br/pt/).",
+      "O projeto foi finalizado e o código-fonte entregue ao [memorial da universidade](https://memorial.ufc.br/pt/).",
     ],
     categories: ["Android", "Kotlin", "SQLite"],
     year: 2019,
