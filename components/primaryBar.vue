@@ -25,15 +25,12 @@
 <script setup lang="ts">
 import { buildFancyPath } from "./../utils/buildFancyPath";
 
-const props = defineProps({
+const props = defineProps<{
   /**
    * The path to be displayed in the primary bar
    */
-  path: {
-    type: String,
-    required: true,
-  },
-});
+  path: string;
+}>();
 
 /**
  * Get the current time in the format HH:MM

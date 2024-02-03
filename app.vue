@@ -1,7 +1,9 @@
 <template>
   <PrimaryBar :path="route.path" />
 
-  <!--TODO: background idea: animate ascii letters or code snippets randomly flashing in the background-->
+  <!-- TODO: background idea: animate ascii letters or code snippets randomly flashing in the background-->
+  <!-- TODO: typewriter effect? -->
+
   <div class="main-wrapper">
     <div absolute z--1 w-full h-full class="main-bg-layer"></div>
     <main px-5>
@@ -54,7 +56,7 @@
       </section>
 
       <section mb-60>
-        <PortfolioCard />
+        <PortfolioCard :items="items" />
       </section>
 
       <section m-a mb-60 sm:max-w-md>
@@ -72,18 +74,8 @@
 </template>
 
 <script lang="ts" setup>
-const route = useRoute();
-
-const h = new Date().getHours();
-
-const goodbye =
-  h < 12
-    ? "goodMorning"
-    : h < 18
-    ? "goodAfternoon"
-    : h < 22
-    ? "goodEvening"
-    : "goodNight";
+import dataEn from "./components/Portfolio/data/projects.en";
+import dataBr from "./components/Portfolio/data/projects.ptBr";
 
 useHead({
   bodyAttrs: {
@@ -97,4 +89,20 @@ useHead({
     },
   ],
 });
+
+const { locale } = useI18n();
+const route = useRoute();
+
+const h = new Date().getHours();
+
+const goodbye =
+  h < 12
+    ? "goodMorning"
+    : h < 18
+    ? "goodAfternoon"
+    : h < 22
+    ? "goodEvening"
+    : "goodNight";
+
+const items = computed(() => (locale.value === "en" ? dataEn : dataBr));
 </script>

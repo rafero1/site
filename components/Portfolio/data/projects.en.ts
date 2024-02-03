@@ -1,6 +1,6 @@
-import type { IProject } from "../PortfolioItem.vue";
+import type { IProject } from "../../../types/IProject";
 
-export const data: IProject[] = [
+const data: IProject[] = [
   {
     title: "Personal Site",
     summary:
@@ -49,3 +49,5 @@ export const data: IProject[] = [
     gitUrl: "",
   },
 ];
+
+export default data;

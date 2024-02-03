@@ -15,6 +15,9 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
+  /**
+   * The tags to be displayed
+   */
   tags: string[];
 }>();
 </script>
