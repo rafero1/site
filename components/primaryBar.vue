@@ -9,9 +9,7 @@
     text-secondary
     flex="~ justify-between items-start row"
   >
-    <span aria-hidden="true"
-      ><span>$</span> {{ buildFancyPath($props.path) }}</span
-    >
+    <span aria-hidden="true"><span>$</span> {{ path }}</span>
     <div flex-self-end>
       <span aria-hidden="true" hidden sm:inline mr-5>
         {{ time.split(":")[0] }}<span class="clock-separator">:</span
@@ -31,6 +29,8 @@ const props = defineProps<{
    */
   path: string;
 }>();
+
+const path = computed(() => buildFancyPath(props.path));
 
 /**
  * Get the current time in the format HH:MM

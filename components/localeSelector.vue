@@ -4,6 +4,8 @@
       <legend sr-only>{{ $t("languageSelect") }}</legend>
       <label
         text-light
+        transition
+        transition-ease
         hover="cursor-pointer text-accent"
         class="has-[:checked]:text-accent"
         :aria-label="$t('en')"
@@ -16,6 +18,8 @@
       <label
         pr-1
         text-light
+        transition
+        transition-ease
         hover="cursor-pointer text-accent"
         class="has-[:checked]:text-accent"
         :aria-label="$t('ptBr')"

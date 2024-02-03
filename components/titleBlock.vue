@@ -44,21 +44,18 @@ Yb,_,dP       `8b,,dP   I8, ,8I_,88,_,d8b,_ ,d8,   ,d8b,,dP     Y8,
  "Y8P"         `Y88"     "Y8P" 8P""Y88P'"Y88P"Y8888P"`Y88P      `Y8</pre
       >
     </div>
-    <header>
+    <header w="50%" sm:w-a mt-5 mx-a>
       <h1
-        w-50
-        sm:w-a
-        mt-5
-        mx-a
-        text="center secondary"
+        text="secondary center"
         font-size-4
         uppercase
+        indent="[1em]"
         tracking="[1em]"
       >
         Rafael Avilar
       </h1>
     </header>
-    <!-- TODO: Quick Contact links -->
+    <QuickContactIcons />
   </div>
 </template>
 
