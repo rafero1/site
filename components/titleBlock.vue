@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- TODO: animation -->
+    <!-- TODO: animation? -->
     <div
       w-max
       mx-a

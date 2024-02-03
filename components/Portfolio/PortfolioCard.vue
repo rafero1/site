@@ -1,9 +1,9 @@
 <template>
-  <!--TODO: image viewer / details popup / page -->
   <div>
-    <h2 font-normal mb-30 text-center>
-      {{ $t("portfolioTitle1") }}
+    <h2 mb-30 font-normal text-center>
+      {{ $t("portfolioTitle1") }} <br sm:hidden />
       <span transition ease-in text-indigo-400>{{ $t("portfolioWord") }}</span>
+      <br sm:hidden />
       {{ $t("portfolioTitle2") }}
     </h2>
 

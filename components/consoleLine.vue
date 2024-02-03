@@ -6,8 +6,17 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
+  /**
+   * The text to be displayed
+   */
   text: string;
+  /**
+   * The color of the text
+   */
   textColor?: string;
+  /**
+   * Whether to show a little timestamp before the text
+   */
   showTimestamp?: boolean;
 }>();
 

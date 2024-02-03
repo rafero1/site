@@ -26,6 +26,9 @@
 import { buildFancyPath } from "./../utils/buildFancyPath";
 
 const props = defineProps({
+  /**
+   * The path to be displayed in the primary bar
+   */
   path: {
     type: String,
     required: true,
