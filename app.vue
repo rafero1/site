@@ -1,10 +1,7 @@
 <template>
   <PrimaryBar :path="route.path" />
 
-  <!-- TODO: background idea: animate ascii letters or code snippets randomly flashing in the background-->
-
-  <div class="main-wrapper">
-    <div absolute z--1 w-full h-full class="main-bg-layer"></div>
+  <div id="main-wrapper" @click="registerClick">
     <main px-5>
       <ConsoleLine
         mb-40
@@ -121,4 +118,75 @@ const goodbye =
     : "goodNight";
 
 const items = computed(() => (locale.value === "en" ? dataEn : dataBr));
+
+const pulseChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+const createCharAtPos = (x: number, y: number, timeout: number = 600) => {
+  return new Promise((resolve) => {
+    const pulse = document.createElement("span");
+    pulse.classList.add(
+      "absolute",
+      "rounded-full",
+      "text-white",
+      "animate-fade-in",
+      "animate-ease-in",
+      `animate-duration-${timeout}`
+    );
+    pulse.ariaHidden = "true";
+    pulse.style.left = `${x}px`;
+    pulse.style.top = `${y}px`;
+    pulse.innerText = pulseChars[Math.floor(Math.random() * pulseChars.length)];
+
+    document.body.appendChild(pulse);
+
+    setTimeout(() => {
+      pulse.remove();
+      resolve(true);
+    }, timeout);
+  });
+};
+
+const createPulseRing = (
+  rootX: number,
+  rootY: number,
+  ringRadius: number = 20,
+  ringTimeout: number = 600,
+  charCount: number = 10
+) => {
+  return new Promise((resolve) => {
+    for (let i = 0; i < charCount; i++) {
+      const angle = (i / charCount) * Math.PI * 2;
+      const x = rootX + Math.cos(angle) * ringRadius;
+      const y = rootY + Math.sin(angle) * ringRadius;
+
+      createCharAtPos(x, y, ringTimeout).then(() => {
+        resolve(true);
+      });
+    }
+  });
+};
+
+const createPulseRings = async (
+  x: number,
+  y: number,
+  ringCount: number = 6
+) => {
+  // for each ring, create a pulse ring
+  for (let i = 0; i < ringCount; i++) {
+    const ringRadius = i * 16;
+    const charCount = 30 + i * 2;
+
+    setTimeout(() => {
+      createPulseRing(x, y, ringRadius, 300, charCount);
+    }, 50 * i);
+  }
+};
+
+function registerClick(e: MouseEvent) {
+  const x = e.pageX;
+  const y = e.pageY;
+
+  // create pulse at mouse position
+  createPulseRings(x, y, 5);
+}
 </script>
