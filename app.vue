@@ -2,7 +2,6 @@
   <PrimaryBar :path="route.path" />
 
   <!-- TODO: background idea: animate ascii letters or code snippets randomly flashing in the background-->
-  <!-- TODO: typewriter effect? -->
 
   <div class="main-wrapper">
     <div absolute z--1 w-full h-full class="main-bg-layer"></div>
@@ -18,8 +17,25 @@
 
       <section mb-60 m-a sm:max-w-md text-center>
         <h2 mb-10 font="size-4 normal italic">
-          <span aria-hidden="true">~</span> {{ $t("welcome") }}
-          <span aria-hidden="true">~</span>
+          <TypewriterEffect
+            :words="[
+              '~Welcome~',
+              '~Bem-vindo~',
+              '~Bienvenido~',
+              '~welkom~',
+              '~vitejte~',
+              '~Добро пожаловать~',
+              '~ようこそ~',
+              '~환영합니다~',
+              '~欢迎~',
+            ]"
+            :timeToWrite="50"
+            :timeToDelete="100"
+            :waitTimeBeforeNewWord="1600"
+            :text-color="['indigo-400', 'sky-400', 'emerald-400', 'red-400']"
+            aria-hidden="true"
+            tracking="[.2em]"
+          />
         </h2>
         <p>{{ $t("intro") }}</p>
         <p>{{ $t("intro2") }}</p>

@@ -45,14 +45,5 @@ export default defineConfig({
       mono: ["Source Code Pro"],
       serif: ["Merriweather"],
     },
-    extend: {
-      backgroundSize: {
-        "size-200": "200% 200%",
-      },
-      backgroundPosition: {
-        "pos-0": "0% 0%",
-        "pos-100": "100% 100%",
-      },
-    },
   },
 });
