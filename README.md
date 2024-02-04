@@ -1,8 +1,18 @@
 # Personal Website
 
-Source code for my personal website. Built mostly with [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) and [UnoCSS](https://unocss.dev/).
+Repo for a personal website. Built using TypeScript, [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) and [UnoCSS](https://unocss.dev/).
 
-Developed using node version 20.10.0 and npm 10.2.3
+Developed with node 20.10.0 and npm 10.2.3
+
+Ideas:
+
+* Noisy / CRT monitor texture background
+* Animated background: ascii letters or code snippets randomly appearing and disappearing (ghosting effect)
+* Back to top floating button
+* Light / Dark mode
+* Typewriter effect variant for all/most text
+  * Unlike the current TypeWriterEffect, content must exist in html even before the typewriter effect starts to not break screen readers / indexing
+* Project details page/modal
 
 ## Nuxt 3 Minimal Starter
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- TODO: animation? -->
     <div
       w-max
       mx-a
@@ -59,8 +58,6 @@ Yb,_,dP       `8b,,dP   I8, ,8I_,88,_,d8b,_ ,d8,   ,d8b,,dP     Y8,
   </div>
 </template>
 
-<script lang="ts" setup>
-// assign
-</script>
+<script lang="ts" setup></script>
 
 <style></style>

@@ -1,8 +1,6 @@
 <template>
   <PrimaryBar :path="route.path" />
 
-  <!-- TODO: background idea: animate ascii letters or code snippets randomly flashing in the background-->
-
   <div class="main-wrapper">
     <div absolute z--1 w-full h-full class="main-bg-layer"></div>
     <main px-5>
