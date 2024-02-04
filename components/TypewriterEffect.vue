@@ -111,12 +111,11 @@ const deleteAndWriteWords = async (
       color.value = props.textColor[currentColorIndex];
     }
 
-    // If no more words are left, start over
-    if (i === words.length - 1) {
-      i = 0;
-    }
+    // If this is the last word in the array, start over.
+    // otherwise, write the next word
+    i = i === words.length - 1 ? 0 : i + 1;
 
-    await writeWord(displayWord, words[i + 1], timeToDelete);
+    await writeWord(displayWord, words[i], timeToDelete);
 
     setTimeout(() => {
       deleteAndWriteWords(

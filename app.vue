@@ -31,7 +31,7 @@
             ]"
             :timeToWrite="50"
             :timeToDelete="100"
-            :waitTimeBeforeNewWord="1600"
+            :waitTimeBeforeNewWord="2000"
             :text-color="['indigo-400', 'sky-400', 'emerald-400', 'red-400']"
             aria-hidden="true"
             tracking="[.2em]"
