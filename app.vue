@@ -46,7 +46,7 @@
         </p>
 
         <div flex="~ col">
-          <p>{{ $t("myTechStack") }}</p>
+          <p mb-6>{{ $t("myTechStack") }}</p>
           <TagCloud
             max-w-sm
             m-a
