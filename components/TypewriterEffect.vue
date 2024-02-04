@@ -100,6 +100,7 @@ const deleteAndWriteWords = async (
   waitTimeBeforeNewWord: number
 ) => {
   try {
+    // Delete the current word
     await deleteWord(displayWord, words[i], timeToWrite);
 
     // Cycle the color if a color array was passed
@@ -113,14 +114,16 @@ const deleteAndWriteWords = async (
 
     // If this is the last word in the array, start over.
     // otherwise, write the next word
-    i = i === words.length - 1 ? 0 : i + 1;
+    const nextIndex = i === words.length - 1 ? 0 : i + 1;
 
-    await writeWord(displayWord, words[i], timeToDelete);
+    // Write the next word
+    await writeWord(displayWord, words[nextIndex], timeToDelete);
 
+    // Wait before writing the next word
     setTimeout(() => {
       deleteAndWriteWords(
         words,
-        i + 1,
+        nextIndex,
         timeToWrite,
         timeToDelete,
         waitTimeBeforeNewWord
