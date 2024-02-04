@@ -119,7 +119,7 @@ const deleteAndWriteWords = async (
     // Write the next word
     await writeWord(displayWord, words[nextIndex], timeToDelete);
 
-    // Wait before writing the next word
+    // Wait before repeating the process
     setTimeout(() => {
       deleteAndWriteWords(
         words,
