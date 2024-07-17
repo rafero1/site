@@ -1,5 +1,5 @@
 <template>
-  <p :text-color="textColor" aria-hidden="true">
+  <p :text-color="textColor" aria-hidden="true" role="presentation">
     > {{ showTimestamp ? `[${timestamp}]: ${text}` : text }}
   </p>
 </template>

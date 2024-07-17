@@ -1,14 +1,7 @@
 <template>
   <article flex flex-col sm:flex-row gap-8>
     <figure m-a mb-12 sm:m-0>
-      <NuxtImg
-        :src="project.image"
-        :alt="project.title"
-        placeholder
-        w-28
-        h-28
-        rounded-full
-      />
+      <NuxtImg :src="project.image" alt="" placeholder w-28 h-28 rounded-full />
     </figure>
     <div>
       <header>

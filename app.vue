@@ -91,7 +91,15 @@
 import dataEn from "./components/Portfolio/data/projects.en";
 import dataBr from "./components/Portfolio/data/projects.ptBr";
 
+const { locale } = useI18n();
+const route = useRoute();
+
+const currentLocale = computed(() => locale);
+
 useHead({
+  htmlAttrs: {
+    lang: locale.value,
+  },
   bodyAttrs: {
     class: "m0 font-mono bg-darker text-light min-h-screen",
   },
@@ -103,9 +111,6 @@ useHead({
     },
   ],
 });
-
-const { locale } = useI18n();
-const route = useRoute();
 
 const h = new Date().getHours();
 
