@@ -98,7 +98,7 @@ const currentLocale = computed(() => locale);
 
 useHead({
   htmlAttrs: {
-    lang: locale.value,
+    lang: currentLocale.value,
   },
   bodyAttrs: {
     class: "m0 font-mono bg-darker text-light min-h-screen",
