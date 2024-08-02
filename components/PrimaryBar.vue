@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { buildFancyPath } from "./../utils/buildFancyPath";
+import { buildFancyPath } from "../utils/buildFancyPath";
 
 const props = defineProps<{
   /**

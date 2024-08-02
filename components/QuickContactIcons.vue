@@ -7,7 +7,7 @@
             class="i-tabler:mail"
             w-1.5rem
             h-1.5rem
-            text-secondary
+            text-light
             transition
             transition-ease
             hover:text-accent
@@ -28,7 +28,7 @@
             class="i-tabler:brand-github"
             w-1.5rem
             h-1.5rem
-            text-secondary
+            text-light
             transition
             transition-ease
             hover:text-accent
@@ -49,7 +49,7 @@
             class="i-tabler:brand-linkedin"
             w-1.5rem
             h-1.5rem
-            text-secondary
+            text-light
             transition
             transition-ease
             hover:text-accent

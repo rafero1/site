@@ -45,7 +45,7 @@ Yb,_,dP       `8b,,dP   I8, ,8I_,88,_,d8b,_ ,d8,   ,d8b,,dP     Y8,
     </div>
     <header w="50%" sm:w-a mt-5 mx-a>
       <h1
-        text="secondary center"
+        text="light center"
         font-size-4
         uppercase
         indent="[1em]"
